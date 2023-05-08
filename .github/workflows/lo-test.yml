@@ -50,7 +50,7 @@ jobs:
       - name: Checkout
         run: |
           cd
-          curl -sL https://raw.githubusercontent.com/stupidloud/nanopi-openwrt/zstd-bin/zstd | sudo tee /usr/bin/zstd > /dev/null
+          curl -sL https://raw.githubusercontent.com/Soar1989/nanopi-openwrt/zstd-bin/zstd | sudo tee /usr/bin/zstd > /dev/null
           for i in {1..20}
           do
             curl -sL --fail https://github.com/stupidloud/sshactions/releases/download/cache/lede.$DEVICE.img.zst.0$i || break
